@@ -31,7 +31,7 @@ postMerge:
       - name: server      
         path : "./server"
         pattern: 
-          - "./test/services/*.ts"
+          - "./test/**/*.ts"
         framework : jest
 #         runPreRunEveryTime: true
         preRun:
