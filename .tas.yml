@@ -52,7 +52,7 @@ preMerge:
             - npm install
             - npm run db:create
             - npm run db:migrate
-        configFile : "./test/jest-e2e.json"
+        configFile : "./jest.config.ts"
 postMerge:
   preRun:
      env:
@@ -103,4 +103,4 @@ postMerge:
             - npm install
             - npm run db:create
             - npm run db:migrate
-        configFile : "./jest.config.ts"
+        configFile : "./test/jest-e2e.json"
