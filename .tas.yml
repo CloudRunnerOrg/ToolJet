@@ -53,7 +53,7 @@ postMerge:
             - npm run db:create
             - npm run db:migrate
         configFile : "./test/jest-e2e.json"
-      - name: e2e-tests      
+      - name: unit-tests      
         path : "./server"
         smartRun: false
         pattern: 
