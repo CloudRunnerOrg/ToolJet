@@ -28,7 +28,7 @@ preMerge:
       - name: e2e-tests      
         path : "./server"
         smartRun: false
-        pattern: 
+        pattern:
           - "./test/**/*.ts"
         framework : jest
         runPreRunEveryTime: true
@@ -53,7 +53,7 @@ preMerge:
             - npm run db:create
             - npm run db:migrate
         configFile : "./test/jest-e2e.json"
-  subModules:
+#   subModules:
       - name: e2e-tests      
         path : "./server"
         smartRun: false
