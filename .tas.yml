@@ -73,11 +73,11 @@ postMerge:
             PG_DB: tooljet_test
             POSTGRES_PASSWORD: postgres
             NODE_ENV: test
-          command:
-            - apt install postgresql-13 build-essential -y
-            - /etc/init.d/postgresql start
-            - su -c "psql -c \"ALTER USER postgres PASSWORD 'postgres';\"" postgres
-            - npm install
-            - npm run db:create
-            - npm run db:migrate
+#           command:
+#             - apt install postgresql-13 build-essential -y
+#             - /etc/init.d/postgresql start
+#             - su -c "psql -c \"ALTER USER postgres PASSWORD 'postgres';\"" postgres
+#             - npm install
+#             - npm run db:create
+#             - npm run db:migrate
         configFile : "./jest.config.ts"
