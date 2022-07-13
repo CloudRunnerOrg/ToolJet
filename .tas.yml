@@ -2,7 +2,7 @@ version: 2.0
 nodeVersion: 14.17.3
 tier: medium
 smartRun: false
-preMerge:
+postMerge:
   preRun:
      env:
        FORCE_COLOR: true
